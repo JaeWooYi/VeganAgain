@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Vegan Again</string><!--타이틀바 이름수정-->
+    <string name="request_permission">This sample needs camera permission.</string>
+    <string name="camera_error">This device doesn\'t support Camera2 API.</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>

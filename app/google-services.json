@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "327452039803",
+    "project_id": "vegan-again-48a23",
+    "storage_bucket": "vegan-again-48a23.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:327452039803:android:80be2c3d8908d42b00e0de",
+        "android_client_info": {
+          "package_name": "com.example.test"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "327452039803-849aboasq2153apun5ohjhdj5ja61446.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAMvWg0WRKSktY0y8Vlg4cBE3Fj_oXmo7Y"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "327452039803-849aboasq2153apun5ohjhdj5ja61446.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

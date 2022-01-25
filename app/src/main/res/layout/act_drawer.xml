@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/drawer"
+    android:layout_width="220dp"
+    android:layout_height="match_parent"
+    android:layout_gravity="start"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/black" />
+
+    <LinearLayout
+        android:id="@+id/category"
+        android:layout_width="match_parent"
+        android:layout_height="65dp"
+        android:paddingLeft="15dp"
+        android:orientation="horizontal"
+        android:gravity="center|center_horizontal">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/tv_my_account"
+            android:gravity="left"
+            android:layout_marginLeft="30dp"
+            android:text="카테고리"
+            android:textColor="#000000"
+            android:textSize="15dp"
+            />
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/gray_light"/>
+
+    <LinearLayout
+        android:id="@+id/favorite"
+        android:layout_width="match_parent"
+        android:layout_height="65dp"
+        android:paddingLeft="15dp"
+        android:orientation="horizontal"
+        android:gravity="center|center_horizontal">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="left"
+            android:layout_marginLeft="30dp"
+            android:text="즐겨찾기"
+            android:textColor="#000000"
+            android:textSize="15dp" />
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/gray_light"/>
+
+    <LinearLayout
+        android:id="@+id/voice_recognition"
+        android:layout_width="match_parent"
+        android:layout_height="65dp"
+        android:paddingLeft="15dp"
+        android:orientation="horizontal"
+        android:gravity="center|center_horizontal">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="left"
+            android:layout_marginLeft="30dp"
+            android:text="음성인식"
+            android:textColor="#000000"
+            android:textSize="15dp"
+            />
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/gray_light"/>
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/gray_light"/>
+
+
+
+
+</LinearLayout>

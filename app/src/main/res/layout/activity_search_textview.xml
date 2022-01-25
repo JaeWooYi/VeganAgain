@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="10dp"
+    >
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/tvName"
+        android:textSize = '13pt'
+        android:text="이름"
+        android:layout_marginTop="5dp"
+        android:textColor="#106058"
+        android:fontFamily="@font/surround"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="탄수화물"
+        android:textSize = '18dp'
+        android:textColor="#6DB16F"
+        android:layout_marginTop="5dp"
+        android:fontFamily="@font/surround"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/tvCAR"
+        android:textSize = '18dp'
+        android:text="탄수화물"
+        android:fontFamily="@font/cookie"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize = '18dp'
+        android:text="단백질"
+        android:textColor="#6DB16F"
+        android:layout_marginTop="5dp"
+        android:fontFamily="@font/surround"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize = '18dp'
+        android:id="@+id/tvPRO"
+        android:text="단백질"
+        android:fontFamily="@font/cookie"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize = '18dp'
+        android:text="지방"
+        android:textColor="#6DB16F"
+        android:layout_marginTop="5dp"
+        android:fontFamily="@font/surround"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize = '18dp'
+        android:id="@+id/tvFAT"
+        android:text="지방"
+        android:fontFamily="@font/cookie"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize = '18dp'
+        android:text="칼로리"
+        android:textColor="#6DB16F"
+        android:layout_marginTop="5dp"
+        android:fontFamily="@font/surround"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize = '18dp'
+        android:id="@+id/tvKCAL"
+        android:text="칼로리"
+        android:layout_marginBottom="5dp"
+        android:fontFamily="@font/cookie"/>
+</LinearLayout>

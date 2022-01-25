@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    android:layout_marginTop="20dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fontFamily="@font/jin_font"
+            android:gravity="center"
+            android:text="Vegan Again"
+            android:textColor="#1C561E"
+            android:textSize="40dp"></TextView>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="150dp">
+
+            <ImageView
+                android:padding="40dp"
+                android:id="@+id/imageView2"
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                app:srcCompat="@drawable/vvv" />
+
+        </LinearLayout>
+
+
+<!--        <TextView-->
+<!--            android:fontFamily="@font/surround"-->
+<!--            android:id="@+id/textView"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="150dp"-->
+<!--            android:gravity="center"-->
+<!--            android:text="Log In"-->
+<!--            android:textColor="@color/colorGray"-->
+<!--            android:textSize="30sp"-->
+<!--            android:textStyle="bold" />-->
+
+        <LinearLayout
+            android:layout_marginTop="100dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:padding="10dp">
+
+
+            <EditText
+                android:id="@+id/emailEditText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:ems="10"
+                android:hint="Email"
+                android:inputType="textEmailAddress" />
+
+            <EditText
+                android:id="@+id/passwordEditText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:ems="10"
+                android:hint="Password"
+                android:inputType="textPassword" />
+
+            <Button
+                android:fontFamily="@font/cookie"
+                android:id="@+id/LoginButton"
+                android:textColor="@color/white"
+                android:layout_width="match_parent"
+                android:background="@drawable/rounded_background_black"
+                android:layout_height="wrap_content"
+                android:text="Log In" />
+
+            <Button
+                android:fontFamily="@font/cookie"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/rounded_background"
+                android:id="@+id/SignPage"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Sign Up" />
+
+            <Button
+                android:fontFamily="@font/cookie"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/rounded_background"
+                android:id="@+id/gotoPasswordResetButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Find password" />
+
+            <com.google.android.gms.common.SignInButton
+                android:id="@+id/signInButton"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp">
+            </com.google.android.gms.common.SignInButton>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</LinearLayout>

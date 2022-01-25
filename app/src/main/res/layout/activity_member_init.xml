@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"></LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:fontFamily="@font/surround"
+            android:id="@+id/textView"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:gravity="center"
+            android:text="My Info"
+            android:textColor="@color/colorGray"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:padding="10dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"></LinearLayout>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="200dp"
+                android:layout_height="200dp"
+                app:cardCornerRadius="100dp"
+                android:layout_gravity="center_horizontal">
+
+                <ImageView
+                    android:id="@+id/profileImageView"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:adjustViewBounds="true"
+                    app:srcCompat="@drawable/ic_baseline_emoji_emotions_24" />
+            </androidx.cardview.widget.CardView>
+            <androidx.cardview.widget.CardView
+                android:layout_width="400dp"
+                android:layout_height="match_parent"
+                android:visibility="gone"
+                android:id="@+id/buttonsCardView"
+                android:layout_gravity="center_horizontal">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <Button
+                        android:fontFamily="@font/cookie"
+                        android:id="@+id/picture"
+                        android:layout_weight="1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="5dp"
+                        android:background="@drawable/rounded_background"
+                        android:layout_marginLeft="10dp"
+                        android:text="Capture Photo" />
+                    <Button
+                        android:fontFamily="@font/cookie"
+                        android:id="@+id/gallery"
+                        android:background="@drawable/rounded_background"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginLeft="5dp"
+                        android:layout_weight="1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Gallery" />
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+
+            <EditText
+                android:layout_marginTop="20dp"
+                android:id="@+id/nameEditText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="NAME" />
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal">
+            <EditText
+                android:id="@+id/birthDayEditText"
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="YYYY"
+                android:inputType="date" />
+    <TextView
+        android:layout_width="20dp"
+        android:layout_height="match_parent"
+        android:text="-"
+        android:gravity="center"></TextView>
+    <EditText
+        android:id="@+id/birthDayEditText2"
+        android:layout_width="50dp"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="MM"
+        android:inputType="date" />
+    <TextView
+        android:layout_width="20dp"
+        android:layout_height="match_parent"
+        android:text="-"
+        android:gravity="center"></TextView>
+    <EditText
+        android:id="@+id/birthDayEditText3"
+        android:layout_width="50dp"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="DD"
+        android:inputType="date" />
+</LinearLayout>
+            <LinearLayout
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <RadioGroup
+                    android:id="@+id/genderGroup"
+                    android:layout_width="match_parent"
+                    android:orientation="horizontal"
+                    android:layout_height="match_parent">
+                <RadioButton
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_width="wrap_content"
+                    android:id="@+id/maleCheck"
+                    android:text="남성"
+                    android:layout_height="match_parent"></RadioButton>
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:id="@+id/femaleCheck"
+                    android:text="여성"
+                    android:layout_height="match_parent"></RadioButton>
+                </RadioGroup>
+            </LinearLayout>
+            <Button
+                android:fontFamily="@font/cookie"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:id="@+id/checkButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/rounded_background"
+                android:text="saved" />
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:elevation="10dp"
+                app:cardCornerRadius="15dp" >
+
+
+            </androidx.cardview.widget.CardView>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</RelativeLayout>

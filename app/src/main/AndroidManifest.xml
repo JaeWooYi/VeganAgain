@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.test">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-feature android:name="android.hardware.camera" />
+    <uses-feature android:name="android.hardware.camera.autofocus" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO"/>
+
+    <queries>
+        <package android:name="com.google.android.googlequicksearchbox"/>
+    </queries>
+
+
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/vvv"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:label="@string/app_name"
+        android:theme="@style/Theme.Design.Light.NoActionBar">
+
+        <activity android:name="com.example.test.activity.MainActivity"><!--첫 시작화면-->
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data
+                    android:scheme="http"
+                    android:host="google.com" />
+            </intent-filter>
+        </activity>
+        <activity android:name="com.example.test.activity.SignUpActivity"
+            android:windowSoftInputMode="adjustResize">
+        </activity>
+        <activity android:name="com.example.test.activity.LoginActivity"
+            android:windowSoftInputMode="adjustResize">
+        </activity>
+        <activity android:name="com.example.test.activity.PasswordResetActivity"
+            android:windowSoftInputMode="adjustResize">
+        </activity>
+        <activity android:name="com.example.test.activity.MemberInitActivity"
+            android:windowSoftInputMode="adjustResize">
+        </activity>
+        <activity android:name="com.example.test.activity.CameraActivity">
+        </activity>
+        <activity android:name="com.example.test.activity.GalleryActivity">
+        </activity>
+        <activity android:name="com.example.test.activity.BasicActivity">
+        </activity>
+        <activity
+            android:name="com.example.test.activity.RecipeActivity"
+            android:windowSoftInputMode="stateHidden|adjustPan">
+        </activity>
+    </application>
+
+</manifest>

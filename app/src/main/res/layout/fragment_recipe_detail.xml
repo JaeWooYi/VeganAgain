@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/const_top"
+        android:layout_width="match_parent"
+        android:layout_height="135dp"
+        android:layout_marginTop="5dp"
+        android:orientation="horizontal"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+//////////////////////////////////////////////////////////////////////////
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/ten"
+            android:layout_weight="1">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+            <ImageView
+                android:background="@drawable/roundimageview"
+                android:id="@+id/iv_image_top"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginRight="5dp"
+                android:layout_weight="1" />
+
+                <Button
+                    android:id="@+id/btn_favorite"
+                    android:layout_width="50dp"
+                    android:layout_height="28dp"
+                    android:layout_marginBottom="8dp"
+                    android:layout_marginRight="5dp"
+                    android:background="@drawable/rounded_background"
+                    android:fontFamily="@font/cookie"
+                    android:text="LIKE"
+                    android:textColor="@color/colorGray"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.965"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.892" />
+                <!-- 원래이거로 했었음 android:text="Add favorite"-->
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </LinearLayout>
+/////////////////////////////////////////////////////////////////////////
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginRight="@dimen/ten"
+            android:orientation="vertical"
+            android:layout_weight="1">
+
+            <LinearLayout
+                android:layout_weight="1"
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:fontFamily="@font/surround"
+                    android:id="@+id/tv_title"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginTop="10dp"
+                    android:gravity="center"
+                    android:layout_weight="1" />
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center">
+
+                <Button
+                    android:fontFamily="@font/cookie"
+                    android:textColor="@color/colorGray"
+                    android:background="@drawable/rounded_background"
+                    android:id="@+id/ttsB"
+                    android:layout_width="120dp"
+                    android:layout_height="28dp"
+                    android:text="read recipe"
+                    />
+
+                <ImageView
+                    android:layout_marginLeft="5dp"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:id="@+id/iv_stop"
+                    android:background="@drawable/rounded_background"
+                    android:src="@drawable/ic_baseline_stop_circle_24"
+                    android:textColor="#BEE4B0"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:focusableInTouchMode="true"
+        android:id="@+id/rv_ingredient"
+        android:layout_width="match_parent"
+        android:layout_height="195dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="@dimen/ten"
+        app:layout_constraintBottom_toTopOf="@id/rv_step"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/const_top"
+        app:layout_constraintVertical_bias="0.0"
+
+        />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/black"
+        android:layout_marginBottom="10dp"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rv_step"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent" />
+
+</LinearLayout>

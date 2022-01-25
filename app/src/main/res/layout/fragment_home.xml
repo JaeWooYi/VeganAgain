@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    tools:context=".fragment.HomeFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:background="@color/white"
+        android:gravity="center"
+        android:elevation="15dp">
+        <TextView
+            android:fontFamily="@font/jin_font"
+            android:layout_width="wrap_content"
+            android:layout_height="60dp"
+            android:gravity="center"
+            android:text="Vegan Again"
+            android:textSize="40dp">
+        </TextView>
+    </LinearLayout>
+
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:background="@drawable/abcqwe"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_height="180dp">
+
+<!--        <ImageView-->
+
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="match_parent"-->
+<!--            android:layout_marginLeft="10dp"-->
+<!--            android:layout_marginTop="20dp"-->
+<!--            android:layout_marginRight="10dp"-->
+<!--            app:srcCompat="@drawable/abc"></ImageView>-->
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+
+        android:gravity="center">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/flex_1"
+                android:elevation="10dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="5dp"
+                app:srcCompat="@drawable/flexiterian"
+                android:layout_width="match_parent"
+                android:layout_weight="1"
+                android:layout_height="match_parent"></ImageView>
+            <ImageView
+                android:id="@+id/pesc_2"
+                android:elevation="10dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="10dp"
+                app:srcCompat="@drawable/pesceterain"
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"></ImageView>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/vege_3"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="5dp"
+                app:srcCompat="@drawable/vegetarian"
+                android:layout_width="match_parent"
+                android:layout_weight="1"
+                android:elevation="10dp"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="20dp"></ImageView>
+            <ImageView
+                android:id="@+id/vegan_4"
+                android:elevation="10dp"
+                android:layout_marginBottom="20dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="10dp"
+                app:srcCompat="@drawable/vegan"
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"></ImageView>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            >
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

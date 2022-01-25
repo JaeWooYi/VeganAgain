@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/home"
+        android:icon="@drawable/ic_home_black_24dp"
+        android:title="home" />
+    <item
+        android:id="@+id/recipe"
+        android:icon="@drawable/ic_baseline_food_bank_24"
+        android:title="recipe" />
+    <item
+        android:id="@+id/myInfo"
+        android:icon="@drawable/ic_account_circle_black_24dp"
+        android:title="M.I" />
+
+
+</menu>
